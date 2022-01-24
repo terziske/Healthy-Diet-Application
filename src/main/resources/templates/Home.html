@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Healthy Diet</title>
+    <!--Bootstrap, CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-dark" style="background-color:#d77b74">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h4 class="text-white" style="margin-left:-1150px">Healthy Diet</h4>
+        <i style="font-size:20px; color:white; margin-right:50px" class="fa">&#xf002;</i>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4" style="background-color:white">
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-home"></i><a href="/home">Home</a></button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-user"></i><a href="/calorie_calculator">Profile</a></button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-area-chart"></i>Track My Day</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-apple"></i><a href="/created_recipes">Create Recipe</a></button>
+            <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-heart"></i>Favourite</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-openid"></i>Nutrition Facts</button>
+            <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-arrow-left"></i>Share</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-meh-o"></i>Settings</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-phone"></i>Contact Us</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-info-circle"></i>About Us</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color:#fadbd2">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="margin-left:180px">
+                <img th:src="@{/lychee.jpg}" class="d-block w-75 mt-5" alt="Image 1" style="height:700px; border-radius:70px">
+                <div class="carousel-caption d-none d-md-block">
+                    <p style="color:white; font-size:30px; margin-right:300px">One study found that lychee may actually help trim belly fat</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="margin-left:180px">
+                <img th:src="@{/dragonfruit.jpg}" class="d-block w-75 mt-5" alt="Image 2" style="height:700px; border-radius:70px">
+                <div class="carousel-caption d-none d-md-block">
+                    <p style="color:white; font-size:30px; margin-right:300px">Dragon fruit contains the antioxidants vitamin C, beta-carotene, lycopene and betalain. Studies have linked diets high in antioxidants to a reduced risk of chronic disease.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="margin-left:180px">
+                <img th:src="@{/lettuce.jpg}" class="d-block w-75 mt-5" alt="Image 2" style="height:700px; border-radius:70px">
+                <div class="carousel-caption d-none d-md-block">
+                    <p style="color:white; font-size:30px; margin-right:300px">Lettuce is 96 per cent water by weight! This makes it mildly more filling than other vegetables.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container text-center">
+        <div class="row" style="padding:80px">
+            <div class="col-6">
+                <a href="/diets"><img th:src="@{/diets.png}" height="490" width="490" style="border-radius:70px; border: solid gray"/></a>
+            </div>
+            <div class="col-6">
+                <a href="/water_tracker"><img th:src="@{/watertracker.png}" height="490" width="490" style="border-radius:70px; border: solid gray"/></a>
+            </div>
+            <div class="col-6">
+                <img th:src="@{/dietplan.png}" height="490" width="490" style="border-radius:70px; border: solid gray"/>
+            </div>
+            <div class="col-6">
+                <a href="/recipes"><img th:src="@{/recipes.png}" height="490" width="490" style="border-radius:70px; border: solid gray"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recipes</title>
+    <!--Bootstrap, CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-dark" style="background-color:#d77b74">
+        <a href="/home"><i style="font-size:20px; color:white; margin-right:50px" class="fa fa-chevron-left"></i></a>
+        <h4 class="text-white" style="margin-left:-1280px">Recipes</h4>
+        <i style="font-size:20px; color:white; margin-right:50px" class="fa">&#xf002;</i>
+    </nav>
+</div>
+<div class="container-fluid" style="background-color:#fadbd2">
+    <div class="container justify-content-center">
+        <div class="row">
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center mt-5" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/breakfast.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Breakfast</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center mt-5" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/fish.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Fish & Shellfish Dishes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 m-auto">
+                <a href="/recipes/chicken_dishes">
+                    <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/chicken.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Dishes</h5>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/salads.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Salads</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/sandwiches.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwiches</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/lamb.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Lamb Dishes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/pork.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Pork Dishes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/sweets.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweets, Cakes, etc.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/snacks.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Snacks</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/vegetabledishes.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetable Dishes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/drinks.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Drinks</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 m-auto">
+                <div class="card border-0 text-center" style="width:30rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/turkey.jpg}" alt="Card image cap" height="350" width="650" style="border-radius:50px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Turkey Dishes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

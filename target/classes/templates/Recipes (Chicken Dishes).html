@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chicken Dishes</title>
+    <!--Bootstrap, CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-dark" style="background-color:#d77b74">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h4 class="text-white" style="margin-left:-1200px">Recipes</h4>
+        <i style="font-size:20px; color:white; margin-right:50px" class="fa">&#xf002;</i>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4" style="background-color:white">
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-home"></i><a href="/home">Home</a></button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-user"></i><a href="/calorie_calculator">Profile</a></button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-area-chart"></i>Track My Day</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-apple"></i><a href="/created_recipes">Create Recipe</a></button>
+            <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-heart"></i>Favourite</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-openid"></i>Nutrition Facts</button>
+            <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-arrow-left"></i>Share</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-meh-o"></i>Settings</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-phone"></i>Contact Us</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-info-circle"></i>About Us</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color:#fadbd2">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color:#fadbd2; padding-top:30px">
+            <li class="breadcrumb-item"><a href="/recipes">Recipes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chicken Dishes</li>
+        </ol>
+    </nav>
+    <div class="card border-0">
+        <div class="card-horizontal" style="display:flex">
+            <div>
+                <img th:src="@{/chickenbiryani.jpg}" height="400" width="700"/>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Aromatic Spiced Chicken Biryani</h5>
+                <p class="card-text">This 450 calorie, all in one chicken biryani comes together in just 40 minutes and is packed full of delicious, authentic Indian flavours.</p>
+                <br/>
+                <i style="font-size:20px; color:black" class="fa fa-pie-chart">2 servings</i>
+                <i style="font-size:20px; color:black" class="fa fa-info-circle">450 calories per serving</i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="card border-0">
+        <div class="card-horizontal" style="display:flex">
+            <div>
+                <img th:src="@{/sataychicken.jpg}" height="400" width="700"/>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Satay Chicken Skewers with Warm Asian Slaw and Rice</h5>
+                <p class="card-text">Packed full of flavour, high in protein and quick and easy to make. Served with warm Asian slaw and rice, this 'takeaway' favourite is fresh and homemade for just 477 calories!</p>
+                <br/>
+                <i style="font-size:20px; color:black" class="fa fa-pie-chart">2 servings</i>
+                <i style="font-size:20px; color:black" class="fa fa-info-circle">477 calories per serving</i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="card border-0">
+        <div class="card-horizontal" style="display:flex">
+            <div>
+                <img th:src="@{/thaicurry.jpg}" height="400" width="700"/>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Thai Green Curry Recipe</h5>
+                <p class="card-text">You don’t need to go out to enjoy a lovely Thai curry with this quick and easy recipe. Great for those who like a mild curry as you can just leave out the chilies!</p>
+                <br/>
+                <i style="font-size:20px; color:black" class="fa fa-pie-chart">2 servings</i>
+                <i style="font-size:20px; color:black" class="fa fa-info-circle">729 calories per serving</i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <a href="/recipes/chicken_dishes/chicken_salad_tacos">
+    <div class="card border-0">
+        <div class="card-horizontal" style="display:flex">
+            <div>
+                <img th:src="@{/chickentacos.jpg}" height="400" width="700"/>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Chicken Salad Tacos</h5>
+                <br/>
+                <i style="font-size:20px; color:black" class="fa fa-pie-chart">1 serving</i>
+                <i style="font-size:20px; color:black" class="fa fa-info-circle">441 calories per serving</i>
+            </div>
+        </div>
+    </div>
+    </a>
+    <hr>
+    <div class="card border-0">
+        <div class="card-horizontal" style="display:flex">
+            <div>
+                <img th:src="@{/chickensweetpotato.jpg}" height="400" width="700"/>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Chicken & Sweet Potato Bake</h5>
+                <p class="card-text">This delicious one tray bake is perfect for the whole family and contains 3 of your 5 a day too! It's really easy to make with a good amount of fibre and protein.</p>
+                <br/>
+                <i style="font-size:20px; color:black" class="fa fa-pie-chart">4 servings</i>
+                <i style="font-size:20px; color:black" class="fa fa-info-circle">324 calories per serving</i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="card border-0">
+        <div class="card-horizontal" style="display:flex">
+            <div>
+                <img th:src="@{/kungpao.jpg}" height="400" width="700"/>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Kung Pao Chicken with Rice</h5>
+                <p class="card-text">Make up your own sweet, sticky, spicy Kung Pao Chicken with this recipe, better than a takeaway, ready in 25 minutes and under 500 calories per serving.</p>
+                <br/>
+                <i style="font-size:20px; color:black" class="fa fa-pie-chart">2 servings</i>
+                <i style="font-size:20px; color:black" class="fa fa-info-circle">498 calories per serving</i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="card border-0">
+        <div class="card-horizontal" style="display:flex">
+            <div>
+                <img th:src="@{/sizzling.jpg}" height="400" width="700"/>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Sizzling Skinny Chicken Fajitas</h5>
+                <p class="card-text">This classic Mexican favourite is always a hit with family and friends... Try our lower calorie chicken fajita recipe - served in 2 mini tortillas, sour cream and salsa - all for under 500 calories per serving.</p>
+                <br/>
+                <i style="font-size:20px; color:black" class="fa fa-pie-chart">2 servings</i>
+                <i style="font-size:20px; color:black" class="fa fa-info-circle">439 calories per serving</i>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

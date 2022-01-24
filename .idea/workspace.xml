@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="adb52384-229c-4777-bf05-306f16c6d3d1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1w9MkIdwBDJuFVbj5iUIgVNgcIr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.dnic.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eli-t\Desktop\Ela\dnic\src\main\resources" />
+      <recent name="C:\Users\eli-t\Desktop\Ela\dnic\src\main\resources\templates" />
+      <recent name="C:\Users\eli-t\Desktop\Ela\dnic\src\main\resources\static" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.dnic.service_or_business.impl" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DnicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dnic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dnic.DnicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="adb52384-229c-4777-bf05-306f16c6d3d1" name="Default Changelist" comment="" />
+      <created>1627866493433</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627866493433</updated>
+      <workItem from="1627866495058" duration="1303000" />
+      <workItem from="1627912483945" duration="604000" />
+      <workItem from="1627916651899" duration="3310000" />
+      <workItem from="1627920191815" duration="2998000" />
+      <workItem from="1627924533771" duration="3944000" />
+      <workItem from="1627938786858" duration="8464000" />
+      <workItem from="1627948570964" duration="1872000" />
+      <workItem from="1627999692101" duration="8592000" />
+      <workItem from="1628371717643" duration="238000" />
+      <workItem from="1628438323643" duration="6064000" />
+      <workItem from="1628522661854" duration="812000" />
+      <workItem from="1629140040826" duration="6678000" />
+      <workItem from="1629228010587" duration="7438000" />
+      <workItem from="1629309105845" duration="391000" />
+      <workItem from="1629317323527" duration="2312000" />
+      <workItem from="1629321285821" duration="178000" />
+      <workItem from="1641504299294" duration="567000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

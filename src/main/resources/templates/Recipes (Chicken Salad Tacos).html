@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chicken Salad Tacos</title>
+    <!--Bootstrap, CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-dark" style="background-color:#d77b74">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h4 class="text-white" style="margin-left:-1200px">Recipes</h4>
+        <i style="font-size:20px; color:white; margin-right:50px" class="fa">&#xf002;</i>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4" style="background-color:white">
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-home"></i><a href="/home">Home</a></button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-user"></i><a href="/calorie_calculator">Profile</a></button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-area-chart"></i>Track My Day</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-apple"></i><a href="/created_recipes/create_recipe">Create Recipe</a></button>
+            <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-heart"></i>Favourite</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-openid"></i>Nutrition Facts</button>
+            <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-arrow-left"></i>Share</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-meh-o"></i>Settings</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-phone"></i>Contact Us</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-info-circle"></i>About Us</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color:#fadbd2">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color:#fadbd2; padding-top:30px">
+            <li class="breadcrumb-item"><a href="/recipes">Recipes</a></li>
+            <li class="breadcrumb-item"><a href="/recipes/chicken_dishes">Chicken Dishes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chicken Salad Tacos</li>
+        </ol>
+    </nav>
+    <div class="card border-0">
+        <div class="row">
+            <div class="col-12 m-auto">
+                <img class="card-img-top" th:src="@{/chickentacos.jpg}" alt="Card image cap" height="650" width="600">
+                <div class="card-body">
+                    <h2 class="card-title m-5" style="color:darkred">Chicken Salad Tacos</h2>
+                    <i style="font-size:20px; color:darkgoldenrod" class="fa fa-pie-chart m-5">Recipe makes: <b>1 serving</b></i>
+                    <i style="font-size:20px; color:darkgoldenrod" class="fa fa-clock-o">Prep time: <b>5 min</b></i>
+                    <i style="font-size:20px; color:darkgoldenrod" class="fa fa-clock-o m-5">Cook time: <b>15 min</b></i>
+                    <i style="font-size:20px; color:darkgoldenrod" class="fa fa-info-circle m-5">Calories: <b>441 per serving</b></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" style="margin-left:70px">
+                <h5 style="color:darkred">Ingredients</h5>
+                <ul>
+                    <li>2 tacos shells</li>
+                    <li>4 lettuce leaves</li>
+                    <li>1 skinless & boneless chicken breast</li>
+                    <li>6 cherry tomatoes</li>
+                    <li>½ yellow pepper</li>
+                    <li>2 tsp soured cream</li>
+                    <li>¼ pack seasoning mix</li>
+                    <li>1 tsp olive oil</li>
+                    <li>¼ can black eyed beans</li>
+                </ul>
+            </div>
+            <div class="col-7">
+                <h5 style="color:darkred">Method</h5>
+                <ol>
+                    <li>Put a large frying pan over a medium-high heat with the oil in.</li>
+                    <li>Chop the chicken breast into bitesize chunks and add to the frying pan, fry until opaque.</li>
+                    <li>Meanwhile prepare and chop half a yellow pepper into slices. Halve the cherry tomatoes and roughly chop the lettuce.</li>
+                    <li>Add the pepper and tomatoes to the pan with the chicken stir fry quickly.</li>
+                    <li>Add the beans, fajita seasoning and mix thoroughly.</li>
+                    <li>Cook for 2 minutes until everything is warmed through and coated in seasoning.</li>
+                    <li>Optional warm the taco shells if you prefer them that way.</li>
+                    <li>Serve chicken mixture in taco shells with chopped lettuce and a dollop of sour cream.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

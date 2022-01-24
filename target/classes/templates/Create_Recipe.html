@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Recipe</title>
+    <!--Bootstrap, CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-dark" style="background-color:#d77b74">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h4 class="text-white" style="margin-left:-1150px">Create Recipe</h4>
+        <i style="font-size:20px; color:white; margin-right:50px" class="fa">&#xf002;</i>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4" style="background-color:white">
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-home"></i><a href="/home">Home</a></button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-user"></i><a href="/calorie_calculator">Profile</a></button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-area-chart"></i>Track My Day</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-apple"></i><a href="/created_recipes/create_recipe">Create Recipe</a></button>
+            <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-heart"></i>Favourite</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-openid"></i>Nutrition Facts</button>
+            <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-arrow-left"></i>Share</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-meh-o"></i>Settings</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-phone"></i>Contact Us</button>
+            <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-info-circle"></i>About Us</button>
+        </div>
+    </div>
+</div>
+<form action="/created_recipes" method="post"
+      enctype="multipart/form-data"
+      th:object="${recipe}">
+<div class="container-fluid" style="background-color:#fadbd2; height:800px">
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <div class="form-group mt-3">
+                <select class="form-control" th:field="*{product.id}">
+                    <option
+                            th:selected="${recipe.getProduct() != null && recipe.getProduct().getId() == pro.getId()}"
+                            th:each="pro : ${products}"
+                            th:value="${pro.getId()}"
+                            th:text="${pro.getName()}">
+                    </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center m-3">
+        <div class="form-group col-1">
+        <input type="text" style="border-radius:10px" class="form-control"
+               th:value="${recipe.getQuantity()}"
+               id="quantity"
+               th:field="*{quantity}"
+               name="quantity"
+               required
+               placeholder="Quantity">
+        </div>
+    </div>
+    <div class="row justify-content-center" style="background-color:lightsteelblue">
+        <div class="col-sm-1">
+                <div class="form-group mt-3">
+                    <select th:field="*{unit.id}" class="form-control">
+                        <option
+                            th:selected="${recipe.getUnit() != null && recipe.getUnit().getId() == uni.getId()}"
+                            th:each="uni : ${units}"
+                            th:value="${uni.getId()}"
+                            th:text="${uni.getName()}">
+                        </option>
+                    </select>
+                </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="background-color:lightsteelblue">
+        <p>Select unit and select intake</p>
+    </div>
+    <div style="text-align:center">
+        <img th:src="@{/lemon.jpeg}" height="200" width="200"/>
+        <h4 class="m-3" style="color:dimgray">Add product to your recipe</h4>
+    </div>
+    <div class="progress m-4" style="height:35px; border-radius:25px; border:solid gray 1px">
+        <div class="col-4 progress-bar bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+    </div>
+<!--<div class="col-12" th:if="${products.size() > 0}">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tbody>
+                <tr th:each="product : ${products}">
+                    <td th:text="${product.getName()}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> -->
+    <div class="row justify-content-center">
+        <div class="form-group col-3">
+            <input type="text" style="border-radius:5px" class="form-control"
+                   th:value="${recipe.getRecipeName()}"
+                   id="name"
+                   name="name"
+                   th:field="*{recipeName}"
+                   required
+                   placeholder="Name the recipe">
+        </div>
+        <div class="col-1">
+            <button type="submit" class="btn btn-block btn-light">Save</button>
+        </div>
+    </div>
+    <div class="col-1" style="margin-left:650px">
+        <a href="/created_recipes" class="btn btn-block btn-info">Cancel</a>
+    </div>
+</div>
+</form>
+</body>
+</html>

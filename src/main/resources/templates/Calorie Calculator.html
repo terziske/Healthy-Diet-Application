@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calorie Calculator</title>
+  <!--Bootstrap, CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function calc() {
+      let A = document.getElementById("age").value;
+      let W = document.getElementById("weight").value;
+      let H = document.getElementById("height").value;
+      let S
+      let R
+
+
+      // input check
+      if (document.getElementById("age").value.length == 0) {
+
+        document.getElementById("ATT").style = "color: red;"
+        document.getElementById("WTT").style = "display: none;"
+        document.getElementById("HTT").style = "display: none;"
+
+        return
+
+      }
+
+      if (document.getElementById("weight").value.length == 0) {
+
+        document.getElementById("ATT").style = "display: none;"
+        document.getElementById("HTT").style = "display: none;"
+        document.getElementById("WTT").style = "color: red;"
+
+        return
+
+      }
+
+      if (document.getElementById("height").value.length == 0) {
+
+        document.getElementById("ATT").style = "display: none;"
+        document.getElementById("WTT").style = "display: none;"
+        document.getElementById("HTT").style = "color: red;"
+
+        return
+
+      }
+
+
+      // Basal
+      if (document.getElementById("male").checked) {
+        S =  Math.round((9.99*W)+(6.25*H)-(4.92*A)+5)
+      } else if (document.getElementById("female").checked) {
+        S =  Math.round((9.99*W)+(6.25*H)-(4.92*A)-161)
+      }
+
+      // Activity 0
+      if (document.getElementById("0").selected) {
+        R = S*1.2
+      }
+
+      // Activity 1
+      if (document.getElementById("1").selected) {
+        R = S
+      }
+
+      // Activity 2
+      if (document.getElementById("2").selected) {
+        R = S*1.35
+      }
+
+      // Activity 3
+      if (document.getElementById("3").selected) {
+        R = S*1.55
+      }
+
+      // Activity 4
+      if (document.getElementById("4").selected) {
+        R = S*1.75
+      }
+
+      // Activity 5
+      if (document.getElementById("5").selected) {
+        R = S*1.95
+      }
+
+      document.getElementById("ATT").style = "display: none;"
+      document.getElementById("HTT").style = "display: none;"
+      document.getElementById("WTT").style = "display: none;"
+
+      document.getElementById("age").placeholder = " "
+      document.getElementById("weight").placeholder = "Kg"
+      document.getElementById("height").placeholder = "Cm"
+
+      document.getElementById("a").innerHTML = Math.round(R)
+
+      document.getElementById("b").innerHTML = Math.round(R*0.80)
+
+      document.getElementById("c").innerHTML = Math.round(R*1.20)
+
+      document.getElementById("Final").style = "max-width: 25rem; margin: auto; border: 6px solid #d77b74; width:50%; margin-top:45px; background-color:#fadbd2; border-radius: 20px; color:#d77b74; margin-bottom: 30px"
+    }
+  </script>
+  <style>
+    .T{
+      font-size: larger;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 30%;
+    }
+
+    .I {
+      width: 50%;
+    }
+    table {
+      border-collapse: collapse;
+    }
+
+    .SS {
+      font-size: x-large;
+      font-family: Comic Sans MS;
+    }
+
+    .CD {
+      font-weight: normal;
+      font-size: initial;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-dark" style="background-color:#d77b74">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <h4 class="text-white" style="margin-left:-1200px">Profile</h4>
+    <i style="font-size:20px; color:white; margin-right:50px" class="fa">&#xf002;</i>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="p-4" style="background-color:white">
+      <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-home"></i><a href="/home">Home</a></button>
+      <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-user"></i><a href="/calorie_calculator">Profile</a></button>
+      <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-area-chart"></i>Track My Day</button>
+      <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-apple"></i><a href="/created_recipes">Create Recipe</a></button>
+      <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-heart"></i>Favourite</button>
+      <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-openid"></i>Nutrition Facts</button>
+      <button class="btn btn-link btn-block border-bottom m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-arrow-left"></i>Share</button>
+      <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-meh-o"></i>Settings</button>
+      <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-phone"></i>Contact Us</button>
+      <button class="btn btn-link btn-block m-0"><i style="font-size:20px; color:#d77b74" class="fa fa-info-circle"></i>About Us</button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" style="background-color:#fadbd2">
+  <div class="row justify-content-center">
+    <div class="col-2">
+      <h4 style="color:darkgoldenrod">Calorie Calculator</h4>
+    </div>
+    <div class="col-2">
+      <a href="/BMI_calculator"><h4>BMI Calculator</h4></a>
+    </div>
+  </div>
+</div>
+<main style="background-color:#fadbd2; height:750px">
+  <div class="card text-center border-warning-color-dark"
+       style="max-width:50rem; margin:auto; width:50%; min-width:20rem; background-color:#fadbd2">
+    <table class="table">
+      <form>
+        <tr style="border: solid gray">
+          <td class="T">Age</td>
+          <td class="I" id="AT"><input type="text" min="0" id="age" style="border-width:2px; border-color:gray; border-radius:5px;"><div style="display:none;" id="ATT">Please enter valid number</div></td>
+          <td class="T">years</td>
+        </tr>
+        <tr style="border: solid gray">
+          <td class="T">Gender</td>
+          <td class="I">
+            <input type="radio" name="gender" value="female" id="female" checked="checked">Female &nbsp &nbsp
+            <input type="radio" name="gender" value="male" id="male"> Male
+          </td>
+        </tr>
+        <tr style="border: solid gray">
+          <td class="T">Current Weight</td>
+          <td class="I"><input type="text" min="0" id="weight" style="border-width:2px; border-color:gray; border-radius:5px;"><div style="display:none;" id="WTT">Please enter valid number</div></td>
+          <td class="T">kg</td>
+        </tr>
+        <tr style="border: solid gray">
+          <td class="T">Height</td>
+          <td class="I"><input type="text" min="0" id="height"
+                               style="border-width:2px; border-color:gray; border-radius:5px;"><div style="display: none;" id="HTT">Please enter valid number</div></td>
+          <td class="T">cm</td>
+        </tr>
+      </form>
+      <tr style="border: solid gray">
+        <td class="T">Exercise Level</td>
+        <td>
+          <select class="custom-select custom-select-sm"
+                  style="width:70%; margin:auto; border-width:2px; border-color:gray; border-radius:5px; margin-top:12px;">
+            <option value="0" id="0">Little/No exercise</option>
+            <option value="1" id="1">Basal Metabolic Rate (BMR)</option>
+            <option value="2" id="2">Low activity (exercise 1-3 times/week)</option>
+            <option value="3" id="3">Active (daily exercise or intense exercise 3-4 times/week)</option>
+            <option value="4" id="4">High activity (intense exercise 6-7 times/week)</option>
+            <option value="5" id="5">Very high activity (very intense exercise daily, or physical job)</option>
+          </select>
+        </td>
+      </tr>
+      <tr style="border: solid gray">
+        <td class="T">I want to</td>
+        <td>
+          <select class="custom-select custom-select-sm"
+                  style="width:70%; margin:auto; border-width:2px; border-color:gray; border-radius:5px; margin-top:12px;">
+            <option value="0" id="0">Maintain weight</option>
+            <option value="1" id="1">Lose weight</option>
+            <option value="2" id="2">Gain weight</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <button id="B" type="button" onclick="calc()" class="btn btn-light" style="width:300px; margin:auto; margin-bottom:25px; border-radius:35px; border-color:gray">Calculate</button>
+  </div>
+
+  <div id="Final" class="card text-center" style="max-width:25rem; margin:auto; border:6px #d77b74; width:50%; margin-top: 45px; background-color:#fadbd2; border-radius:20px; color:#d77b74; display:none; margin-bottom:30px">
+    <table style="margin-top: 15px;">
+      <tr>
+        <td class="T" style="font-weight:bold;">Maintain weight <p></p>
+        </td>
+        <td><div id="a" class="SS">&nbsp</div><div class="CD">Calories/day</div></td>
+      </tr>
+      <tr>
+        <td class="T" style="font-weight:bold;">Weight loss <p
+                style="font-size:small; color:#888; font-weight:lighter;">0.5 kg/week</p>
+        </td>
+        <td><div id="b" class="SS">&nbsp</div><div class="CD">Calories/day</div></td>
+      </tr>
+      <tr>
+        <td class="T" style="font-weight:bold;">Weight gain <p
+                style="font-size:small; color:#888; font-weight:lighter;">0.5 kg/week</p>
+        </td>
+        <td><div id="c" class="SS">&nbsp</div><div class="CD">Calories/day</div></td>
+      </tr>
+    </table>
+  </div>
+</main>
+</body>
+</html>

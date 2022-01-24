@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diets</title>
+    <!--Bootstrap, CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-dark" style="background-color:#d77b74">
+            <a href="/home"><i style="font-size:20px; color:white; margin-right:50px" class="fa fa-chevron-left"></i></a>
+        <h4 class="text-white" style="margin-left:-1300px">Diets</h4>
+        <i style="font-size:20px; color:white; margin-right:50px" class="fa">&#xf002;</i>
+    </nav>
+</div>
+<div class="container-fluid" style="background-color:#fadbd2">
+    <div class="container justify-content-center">
+        <div class="row">
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center mt-5" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/vegetarian.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetarian Diet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center mt-5" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/vegan.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Diet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center mt-5" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/keto.jpg}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Keto Diet</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/paleo.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Paleo Diet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/lowcarb.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Low Carb Diet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/detox.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Detox Diet</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/bloodtype.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Blood Type Diet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width:18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/southbeach.jpg}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">South Beach Diet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width:18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/mediterranean.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Mediterranean Diet</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/rawfood.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Raw Food Diet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/theatkins.png}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">The Atkins Diet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 m-auto">
+                <div class="card border-0 text-center" style="width: 18rem; background-color:#fadbd2">
+                    <img class="card-img-top" th:src="@{/intermittentfasting.jpg}" alt="Card image cap" height="200" width="500" style="border-radius:60px; border: solid gray">
+                    <div class="card-body">
+                        <h5 class="card-title">Intermittent Fasting Diet</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
